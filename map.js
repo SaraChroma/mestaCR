@@ -7,7 +7,7 @@ var Jawg_Matrix = L.tileLayer('https://tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.p
 	minZoom: 0,
 	maxZoom: 22,
 	accessToken: '<your accessToken>'
-});
+}).addTo(mapa);
 
 // Ochrana proti vložení HTML z dat
 function esc(text) {
