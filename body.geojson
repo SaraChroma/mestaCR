@@ -18,6 +18,17 @@
         "popisek": "Hlavní a největší město České republiky na řece Vltavě, historické centrum je památkou UNESCO."
       },
       "geometry": { "type": "Point", "coordinates": [14.4378, 50.0755] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "nazev": "Valašské Meziříčí",
+        "popisek": "Mé rodné město."
+      },
+      "geometry": { "type": "Point", "coordinates": [17.9711, 49.4717] }
     }
+  
   ]
 }
