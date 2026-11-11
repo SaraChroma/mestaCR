@@ -2,10 +2,8 @@
 const mapa = L.map('mapa').setView([49.8, 15.5], 7);
 
 // Podkladová mapa (OpenStreetMap)
-var Thunderforest_TransportDark = L.tileLayer('https://api.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}', {
-	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: '<your apikey>',
-	maxZoom: 22
+var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
 }).addTo(mapa);
 
 // Ochrana proti vložení HTML z dat
