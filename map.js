@@ -2,11 +2,10 @@
 const mapa = L.map('mapa').setView([49.8, 15.5], 7);
 
 // Podkladová mapa (OpenStreetMap)
-var Jawg_Matrix = L.tileLayer('https://tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-	attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	minZoom: 0,
-	maxZoom: 22,
-	accessToken: '<your accessToken>'
+var Thunderforest_TransportDark = L.tileLayer('https://api.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	apikey: '<your apikey>',
+	maxZoom: 22
 }).addTo(mapa);
 
 // Ochrana proti vložení HTML z dat
